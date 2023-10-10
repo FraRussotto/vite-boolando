@@ -54,10 +54,11 @@ header{
   margin-bottom: 40px;
   
   .top_bar{
-    height: 80px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
     .menu_gen{
       display: flex;
       padding: 0;
@@ -67,7 +68,7 @@ header{
       }
     }
     img{
-      height: 50px;
+      height: 30px;
     }
     .menu_account{
       display: flex;
