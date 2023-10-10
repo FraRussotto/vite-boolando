@@ -6,8 +6,10 @@
 
 <template>
   <header>
-    <div class="nav">
-      <ul>
+    <div class="top_bar container">
+
+      <div class="nav_left">
+      <ul class="menu_gen">
         <li>
           <a href="#">Uomo</a>
         </li>
@@ -18,22 +20,61 @@
           <a href="#">Bambino</a>
         </li>
       </ul>
-    </div>
-    <div class="logo">
+      </div>
+
+      <div class="logo">
       <img src="/boolean-logo.png" alt="">
+      </div>
+
+      <div class="nav_right">
+      <ul class="menu_account">
+        <li>
+          <a href="#">Link</a>
+        </li>
+        <li>
+          <a href="#">Link</a>
+        </li>
+        <li>
+          <a href="#">Link</a>
+        </li>
+      </ul>
+
+      </div>
+
     </div>
   </header>
 </template>
 
 <style lang="scss">
 
-header{
-  height: 80px;
-  background-color: $primary-color;
-}
+@use '../scss/partials/variables' as *;
 
-img{
-  width: 200px;
+header{
+  background-color: $primary-color;
+  
+  .top_bar{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .menu_gen{
+      display: flex;
+      li{
+        text-transform: capitalize;
+        margin-right: 10px;
+      }
+    }
+    img{
+      height: 50px;
+    }
+    .menu_account{
+      display: flex;
+      li{
+        margin-left: 10px;
+      }
+    }
+  }
+
 }
 
 </style>
