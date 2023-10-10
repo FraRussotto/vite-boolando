@@ -51,6 +51,7 @@
 
 header{
   background-color: $primary-color;
+  margin-bottom: 40px;
   
   .top_bar{
     height: 80px;
@@ -59,6 +60,7 @@ header{
     justify-content: space-between;
     .menu_gen{
       display: flex;
+      padding: 0;
       li{
         text-transform: capitalize;
         margin-right: 10px;
