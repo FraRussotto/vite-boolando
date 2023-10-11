@@ -2,14 +2,7 @@
   export default {
     name:'ProductCard',
     props: {
-      image: String,
-      image_2: String,
-      discount: String,
-      eco: String,
-      marca: String,
-      modello: String,
-      price: Number,
-      oldprice: Number
+      product: Object
     }
   }
 </script>
@@ -19,17 +12,17 @@
   <div class="col">
     <div class="card">
       <div class="card_image">
-        <img :src="image" alt="">
-        <img class="secondary-img" :src="image_2" alt="">
+        <img :src="product.src" alt="">
+        <img class="secondary-img" :src="product.src_2" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
-          <span v-if="!(discount == null)"  class="tag_red">{{discount}}</span> <span v-if="!(eco == null)" class="tag_green">{{ eco }}</span>
+          <span v-if="!(product.discount == null)"  class="tag_red">{{product.discount}}</span> <span v-if="!(product.eco == null)" class="tag_green">{{ product.eco }}</span>
         </div>
       </div>
       <div class="card_text">
-        <span class="brand">{{ marca }}</span>
-        <span class="model">{{ modello }}</span>
-        <span class="price">{{ price }} &euro;</span> <span v-if="!(oldprice == null)" class="oldprice">{{ oldprice }} &euro;</span>
+        <span class="brand">{{ product.marca }}</span>
+        <span class="model">{{ product.modello }}</span>
+        <span class="price">{{ product.lastPrice }} &euro;</span> <span v-if="!(product.fullPrice == null)" class="oldprice">{{ product.fullPrice }} &euro;</span>
       </div>
     </div>
   </div>

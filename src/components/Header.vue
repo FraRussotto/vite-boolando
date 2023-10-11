@@ -27,7 +27,7 @@
       </div>
 
       <div class="nav_right">
-      <ul class="menu_account">
+      <ul>
         <li>
           <a href="#"><i class="fa-regular fa-user"></i></a>
         </li>
@@ -61,29 +61,43 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    ul{
-      display: flex;
-      padding: 0;
-      margin-bottom: 0;
-      li{
-        a{
-          text-transform: capitalize;
-          margin-right: 10px;
-          font-weight: bold;
-          &:hover{
-            text-decoration: underline;
+    .nav_left{
+      flex-basis: 30%;
+      ul{
+        display: flex;
+        padding: 0;
+        margin-bottom: 0;
+        li{
+          a{
+            text-transform: capitalize;
+            margin-right: 10px;
+            font-weight: bold;
+            &:hover{
+              text-decoration: underline;
+            }
           }
         }
       }
     }
-    img{
-      height: 50px;
+    .logo{
+      flex-basis: 100%;
+      text-align: center;
+      img{
+        height: 50px;
+      }
     }
-    .menu_account{
+    .nav_right{
       display: flex;
-      li{
-        a{
-          margin-left: 10px;
+      justify-content: flex-end;
+      flex-basis: 30%;
+      ul{
+        display: flex;
+        padding: 0;
+        margin-bottom: 0;
+        li{
+          a{
+            margin-left: 10px;
+          }
         }
       }
     }
