@@ -40,15 +40,15 @@ export default [
     eco: 'Sostenibilità',
     marca: "Levi's",
     modello: 'TEE UNISEX',
-    fullPrice: 14.99,
-    lastPrice: 29.99
+    fullPrice: 29.99,
+    lastPrice: 14.99
   },
   {
     id: 5,
     src: '/img/5.webp',
     src_2: '/img/5b.webp',
     discount: '-50%',
-    eco: 'Sostenibilità',
+    eco: null,
     marca: "Maya Deluxe",
     modello: 'STRIPE BODICE',
     fullPrice: null,
@@ -59,7 +59,7 @@ export default [
     src: '/img/6.webp',
     src_2: '/img/6b.webp',
     discount: null,
-    eco: null,
+    eco: 'Sostenibilità',
     marca: "Esprit",
     modello: 'MAGLIONE - BLACK',
     fullPrice: null,

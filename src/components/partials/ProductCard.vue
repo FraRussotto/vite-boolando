@@ -23,7 +23,7 @@
         <img class="secondary-img" :src="image_2" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
-          <span class="tag_red">{{discount}}</span> <span v-if="!(eco == null)" class="tag_green">{{ eco }}</span>
+          <span v-if="!(discount == null)"  class="tag_red">{{discount}}</span> <span v-if="!(eco == null)" class="tag_green">{{ eco }}</span>
         </div>
       </div>
       <div class="card_text">
