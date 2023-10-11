@@ -27,6 +27,7 @@
                       :image="product.src"
                       :image_2="product.src_2"
                       :discount="product.discount"
+                      :eco="product.eco"
                       :marca="product.marca"
                       :modello="product.modello"
                       :price="product.lastPrice"

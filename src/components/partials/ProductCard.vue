@@ -5,7 +5,7 @@
       image: String,
       image_2: String,
       discount: String,
-      sostenibilità: Boolean,
+      eco: String,
       marca: String,
       modello: String,
       price: Number,
@@ -23,13 +23,13 @@
         <img class="secondary-img" :src="image_2" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
-          <span class="tag_red">{{discount}}</span> <span class="tag_green">Sostenibilità</span>
+          <span class="tag_red">{{discount}}</span> <span v-if="!(eco == null)" class="tag_green">{{ eco }}</span>
         </div>
       </div>
       <div class="card_text">
         <span class="brand">{{ marca }}</span>
         <span class="model">{{ modello }}</span>
-        <span class="price">{{ price }} &euro;</span><span class="oldprice">{{ oldprice }} &euro;</span>
+        <span class="price">{{ price }} &euro;</span> <span v-if="!(oldprice == null)" class="oldprice">{{ oldprice }} &euro;</span>
       </div>
     </div>
   </div>
@@ -50,7 +50,7 @@
       }
       .tag{
         position: absolute;
-        z-index: 999;
+        z-index: 998;
         bottom: 20px; 
       }
       .heart{
