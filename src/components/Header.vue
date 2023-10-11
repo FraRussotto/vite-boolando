@@ -51,7 +51,10 @@
 
 header{
   background-color: $primary-color;
-  margin-bottom: 40px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
   
   .top_bar{
     height: 80px;

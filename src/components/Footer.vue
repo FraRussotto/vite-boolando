@@ -19,11 +19,11 @@
       <div class="right">
         <span>Trovaci anche su</span>
         <ul class="p-0 d-flex justify-content-center">
-          <li><a href="">icona</a></li>
-          <li><a href="">icona</a></li>
-          <li><a href="">icona</a></li>
-          <li><a href="">icona</a></li>
-          <li><a href="">icona</a></li>
+          <li><a href=""><i class="fa-brands fa-square-twitter"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-facebook"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-instagram"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-pinterest"></i></a></li>
+          <li><a href=""><i class="fa-brands fa-square-youtube"></i></a></li>
         </ul>
       </div>
     </div>
@@ -52,11 +52,11 @@ footer{
     text-align: center;
     span{
       font-size: 0.8rem;
+      margin-left: 10px;
     }
     li{
-      margin-left: 5px;
-      font-size: 0.6rem;
-      }
+      margin-left: 10px;     
+    }
     }
   }
 }
