@@ -3,6 +3,7 @@
     name:'ProductCard',
     props: {
       image: String,
+      image_2: String,
       discount: String,
       sostenibilità: Boolean,
       marca: String,
@@ -18,8 +19,8 @@
   <div class="col">
     <div class="card">
       <div class="card_image">
-        <img src="/public/img/1.webp" alt="">
-        <img class="secondary-img" src="/public/img/1b.webp" alt="">
+        <img :src="image" alt="">
+        <img class="secondary-img" :src="image_2" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
           <span class="tag_red">{{discount}}</span> <span class="tag_green">Sostenibilità</span>

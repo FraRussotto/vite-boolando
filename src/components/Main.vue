@@ -24,6 +24,9 @@
       <div class="row row-cols-3">
         <ProductCard  v-for="product in products" 
                       :key="product.id"
+                      :image="product.src"
+                      :image_2="product.src_2"
+                      :discount="product.discount"
                       :marca="product.marca"
                       :modello="product.modello"
                       :price="product.lastPrice"

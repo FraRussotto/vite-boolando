@@ -1,8 +1,8 @@
 export default [
   {
     id: 1,
-    src: '1.webp',
-    src_2: '1b.webp',
+    src: '/img/1.webp',
+    src_2: '/img/1b.webp',
     discount: '-50%',
     sostenibilita: true,
     marca: "Levi's",
@@ -12,8 +12,8 @@ export default [
   },
   {
     id: 2,
-    src: '2.webp',
-    src_2: '2b.webp',
+    src: '/img/2.webp',
+    src_2: '/img/2b.webp',
     discount: '-30%',
     sostenibilita: false,
     marca: "Guess",
@@ -23,8 +23,8 @@ export default [
   },
   {
     id: 3,
-    src: '3.webp',
-    src_2: '3b.webp',
+    src: '/img/3.webp',
+    src_2: '/img/3b.webp',
     discount: '-30%',
     sostenibilita: false,
     marca: "Come Zucchero Filato",
@@ -34,8 +34,8 @@ export default [
   },
   {
     id: 4,
-    src: '4.webp',
-    src_2: '4b.webp',
+    src: '/img/4.webp',
+    src_2: '/img/4b.webp',
     discount: '-50%',
     sostenibilita: true,
     marca: "Levi's",
@@ -45,8 +45,8 @@ export default [
   },
   {
     id: 5,
-    src: '5.webp',
-    src_2: '5b.webp',
+    src: '/img/5.webp',
+    src_2: '/img/5b.webp',
     discount: '-50%',
     sostenibilita: true,
     marca: "Maya Deluxe",
@@ -56,8 +56,8 @@ export default [
   },
   {
     id: 6,
-    src: '6.webp',
-    src_2: '6b.webp',
+    src: '/img/6.webp',
+    src_2: '/img/6b.webp',
     discount: null,
     sostenibilita: false,
     marca: "Esprit",
