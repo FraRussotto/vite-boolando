@@ -2,8 +2,9 @@
   export default {
     name:'ProductCard',
     props: {
-      image: String,
-      discount: String
+      img: String,
+      discount: String,
+      sostenibilità: Boolean
 
     }
   }
@@ -14,7 +15,7 @@
   <div class="col">
     <div class="card">
       <div class="card_image">
-        <img :src="image" alt="">
+        <img :src="img" alt="">
         <img class="secondary-img" :src="secondary_img" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
