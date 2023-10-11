@@ -6,10 +6,10 @@
 
 <template>
   <header>
-    <div class="top_bar container">
+    <div class="top_bar container align-items-center ">
 
       <div class="nav_left">
-      <ul class="menu_gen">
+      <ul>
         <li>
           <a href="#">Uomo</a>
         </li>
@@ -29,13 +29,13 @@
       <div class="nav_right">
       <ul class="menu_account">
         <li>
-          <a href="#">Link</a>
+          <a href="#"><i class="fa-regular fa-user"></i></a>
         </li>
         <li>
-          <a href="#">Link</a>
+          <a href="#"><i class="fa-regular fa-heart"></i></a>
         </li>
         <li>
-          <a href="#">Link</a>
+          <a href="#"><i class="fa-solid fa-bag-shopping"></i></a>
         </li>
       </ul>
 
@@ -54,26 +54,34 @@ header{
   margin-bottom: 40px;
   
   .top_bar{
-    height: 50px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    align-items: center;
-    .menu_gen{
+    ul{
       display: flex;
       padding: 0;
+      margin-bottom: 0;
       li{
-        text-transform: capitalize;
-        margin-right: 10px;
+        a{
+          text-transform: capitalize;
+          margin-right: 10px;
+          font-weight: bold;
+          &:hover{
+            text-decoration: underline;
+          }
+        }
       }
     }
     img{
-      height: 30px;
+      height: 50px;
     }
     .menu_account{
       display: flex;
       li{
-        margin-left: 10px;
+        a{
+          margin-left: 10px;
+        }
       }
     }
   }

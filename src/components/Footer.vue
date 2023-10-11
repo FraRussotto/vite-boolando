@@ -37,7 +37,7 @@
 
 footer{
   background-color: $footer-bg-color;
-  height: 70px;
+  height: 90px;
   color: white;
   padding-top: 15px;
   .bottom_bar{
