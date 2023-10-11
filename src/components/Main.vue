@@ -1,12 +1,19 @@
 <script>
   import ProductCard from './partials/ProductCard.vue';
+  import products from '../data/products'
 
   export default{
     name: 'Main',
     components: {
-    ProductCard,
-}
+      ProductCard
+    },
+    data(){
+      return{
+        products
+      }
+    }
   }
+
 </script>
 
 <template>
@@ -15,12 +22,9 @@
 
     <div class="main_wrapper container">
       <div class="row row-cols-3">
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
-        <ProductCard />
+        <ProductCard  v-for="product in products" 
+                      :key="product.id"
+                      :image="product.src"/>                  
       </div>
     </div>
 

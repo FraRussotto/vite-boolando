@@ -1,6 +1,11 @@
 <script>
-  export default{
-    name:'ProductCard'
+  export default {
+    name:'ProductCard',
+    props: {
+      image: String,
+      discount: String
+
+    }
   }
 </script>
 
@@ -9,11 +14,11 @@
   <div class="col">
     <div class="card">
       <div class="card_image">
-        <img src="../../asset/img/1.webp" alt="">
-        <img class="secondary-img" src="../../asset/img/1b.webp" alt="">
+        <img :src="image" alt="">
+        <img class="secondary-img" :src="secondary_img" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
-          <span class="tag_red">-50%</span> <span class="tag_green">Sostenibilità</span>
+          <span class="tag_red">{{discount}}</span> <span class="tag_green">Sostenibilità</span>
         </div>
       </div>
       <div class="card_text">
@@ -30,7 +35,7 @@
 
 @use '../../scss/partials/variables' as *;
 
-    .card{
+  .card{
     min-width: 250px;
     margin-bottom: 30px;
     .card_image{
@@ -54,10 +59,10 @@
         vertical-align: center;
         text-align: center;
         font-size: 2.5rem;
-      }
-      .heart:hover{
-        color: red;
-        cursor: pointer;
+        &:hover{
+          color: red;
+          cursor: pointer;
+        }
       }
 
       .secondary-img{
@@ -67,19 +72,19 @@
         left: 0;
       }
 
-      .card_image:hover .secondary-img{
+      &:hover .secondary-img{
         display: block;
       }
 
       .tag_red{
-        background-color: #ff0000;
+        background-color: $badge-color-red;
         color: white;
         font-weight: bold;
         padding: 5px 10px;
       }
 
       .tag_green{
-        background-color: #008000;
+        background-color: $badge-color-green;
         color: white;
         font-weight: bold;
         padding: 5px 10px;
@@ -88,12 +93,13 @@
     }
     .card_text{
       .brand{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
       }
       .model{
         font-size: 1.2rem;
         text-transform: uppercase;
         display: block;
+        font-weight: bold;
       }
       .price{
         color: $badge-color-red;
