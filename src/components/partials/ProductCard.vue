@@ -2,10 +2,13 @@
   export default {
     name:'ProductCard',
     props: {
-      img: String,
+      image: String,
       discount: String,
-      sostenibilità: Boolean
-
+      sostenibilità: Boolean,
+      marca: String,
+      modello: String,
+      price: Number,
+      oldprice: Number
     }
   }
 </script>
@@ -15,17 +18,17 @@
   <div class="col">
     <div class="card">
       <div class="card_image">
-        <img :src="img" alt="">
-        <img class="secondary-img" :src="secondary_img" alt="">
+        <img src="/public/img/1.webp" alt="">
+        <img class="secondary-img" src="/public/img/1b.webp" alt="">
         <div class="heart">&hearts;</div>
         <div class="tag">
           <span class="tag_red">{{discount}}</span> <span class="tag_green">Sostenibilità</span>
         </div>
       </div>
       <div class="card_text">
-        <span class="brand">Guess</span>
-        <span class="model">roses tee</span>
-        <span class="price">20,99 &euro;</span><span class="oldprice">29,99 &euro;</span>
+        <span class="brand">{{ marca }}</span>
+        <span class="model">{{ modello }}</span>
+        <span class="price">{{ price }} &euro;</span><span class="oldprice">{{ oldprice }} &euro;</span>
       </div>
     </div>
   </div>

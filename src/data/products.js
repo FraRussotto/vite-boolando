@@ -1,8 +1,8 @@
 export default [
   {
     id: 1,
-    src: '../../public/img/1.webp',
-    src_2: '../../public/img/1b.webp',
+    src: '1.webp',
+    src_2: '1b.webp',
     discount: '-50%',
     sostenibilita: true,
     marca: "Levi's",
